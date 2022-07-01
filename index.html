@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4.2操纵标签属性</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+    	#main{
+    		width:1200px;
+			height:800px;
+			background-image: url(res/cover.png);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+    	}
+		.notice{
+			width: 223px;
+			height: 57px;
+		    animation:notice 2s ease infinite;
+			margin-top: 20px;
+			position: absolute;
+			left: 50%;
+			top: 90%;
+			transform: translate(-50%,-50%);
+			
+		}			
+		@keyframes notice {
+		        0% {opacity:0.4;}
+				50% {opacity:1;}
+		        100%{opacity:0.4;}
+		 }
+    </style>
+  </head>
+  <body>
+	<div id="main">
+		<a href="caiwei.html"><div class="notice"><img height=50px src="./res/click.png"></div></a>
+	</div>
+  </body>
+</html>
